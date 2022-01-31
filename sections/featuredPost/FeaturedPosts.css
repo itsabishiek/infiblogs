@@ -1,0 +1,43 @@
+.featured-posts {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 30px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.featured-posts::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-left-arrow {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  z-index: 999;
+  border-radius: 50%;
+  padding: 12px 0;
+}
+
+.custom-right-arrow {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  z-index: 999;
+  border-radius: 50%;
+  padding: 12px 0;
+}
+
+.arrow-icon {
+  height: 24px;
+  width: 24px;
+  color: white;
+}

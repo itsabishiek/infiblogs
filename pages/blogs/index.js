@@ -1,13 +1,11 @@
+import React from "react";
 import Head from "next/head";
-import { getPosts } from "../services";
-import PostCard from "../components/postCard/PostCard";
-import PostWidget from "../components/postWidget/PostWidget";
-import Categories from "../components/categories/Categories";
-import FeaturedPosts from "../sections/featuredPost/FeaturedPosts";
+import { getPosts } from "../../services";
+import BlogPosts from "../../components/blogPosts/BlogPosts";
+import PostWidget from "../../components/postWidget/PostWidget";
+import Categories from "../../components/categories/Categories";
 
-export default function Home({ title = "InfiBlogs", posts }) {
-  // console.log(posts);
-
+const Blogs = ({ title = "InfiBlogs | Blogs", posts }) => {
   return (
     <div className="container">
       <Head>
@@ -16,27 +14,27 @@ export default function Home({ title = "InfiBlogs", posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <FeaturedPosts />
-
       <div className="home">
         <div className="home-left">
-          {posts.reverse().map((post, i) => (
-            <div key={i} className="home-posts">
-              <PostCard post={post.node} />
+          {posts.map((post, i) => (
+            <div key={i}>
+              <BlogPosts post={post.node} />
             </div>
           ))}
         </div>
 
         <div className="home-right">
           <div>
-            <Categories />
             <PostWidget />
+            <Categories />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Blogs;
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];

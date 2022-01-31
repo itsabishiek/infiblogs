@@ -1,0 +1,53 @@
+.post-widget {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.post-widget h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.post-widget-container {
+  margin-bottom: 20px;
+}
+
+.post-widget-top {
+  position: relative;
+  width: 100%;
+}
+
+.post-widget-img {
+  transition: all 1s ease;
+}
+
+.post-widget-img:hover {
+  transform: scale(1.2);
+}
+
+.post-widget-date {
+  position: absolute;
+  background-color: #fff;
+  width: 60%;
+  padding: 5px 10px;
+  bottom: 0;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.post-widget-date .post-date {
+  white-space: nowrap;
+}
+
+.post-widget-bottom {
+  margin-top: 15px;
+}
+
+.post-widget-bottom h4 {
+  font-size: 18px;
+  color: var(--text-primary);
+  cursor: pointer;
+}

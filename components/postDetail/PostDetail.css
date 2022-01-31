@@ -1,0 +1,42 @@
+.post-detail {
+  margin-top: 20px;
+}
+
+.post-detail-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.post-detail-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-detail-author-img {
+  border-radius: 50%;
+}
+
+.post-detail-author-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-detail-date {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.post-detail-title {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .post-detail {
+    font-size: 80%;
+  }
+}

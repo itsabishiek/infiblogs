@@ -1,0 +1,47 @@
+.container {
+  padding: 0 3rem;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.home-left {
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.home-right {
+  flex: 3;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-left {
+    flex: 1;
+  }
+
+  .home-right {
+    flex: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

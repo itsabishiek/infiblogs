@@ -1,0 +1,28 @@
+.post-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.post-details-left {
+  flex: 9;
+  margin-top: 10px;
+}
+
+.post-details-right {
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  .post-details {
+    flex-direction: column;
+  }
+
+  .post-details-left {
+    flex: 1;
+  }
+
+  .post-details-right {
+    flex: 1;
+  }
+}

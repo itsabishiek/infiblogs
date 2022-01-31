@@ -1,0 +1,112 @@
+.comment-form {
+  margin: 30px 0;
+  box-shadow: 0px 2px 15px -3px rgba(90, 90, 90, 0.3);
+  border-radius: 15px;
+  padding: 32px;
+}
+
+.comment-form h3 {
+  font-size: 25px;
+  color: var(--primary-color);
+  border-bottom: 2px solid #cacaca;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+.comment-textarea {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.comment-textarea textarea {
+  padding: 16px;
+  outline: none;
+  width: 100%;
+  height: 160px;
+  --tw-bg-opacity: 1;
+  background-color: var(--bg-secondary);
+  border: none;
+  font-size: 18px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.comment-input > input {
+  --tw-bg-opacity: 1;
+  background-color: var(--bg-secondary);
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.comment-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* .comment-checkbox input {
+  width: 15px;
+  height: 15px;
+} */
+
+.comment-checkbox label {
+  cursor: pointer;
+}
+
+.comment-btn button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 16px;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  color: #eeeeee;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .comment-input {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .comment-form {
+    padding: 20px 16px;
+  }
+
+  .comment-form h3 {
+    font-size: 20px;
+  }
+
+  .comment-textarea textarea {
+    font-size: 16px;
+  }
+
+  .comment-input > input {
+    font-size: 15px;
+  }
+
+  .comment-checkbox label {
+    font-size: 14px;
+  }
+}

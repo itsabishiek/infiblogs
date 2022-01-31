@@ -1,0 +1,24 @@
+.categories {
+  margin-top: 20px;
+}
+
+.categories h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.category-wrapper {
+  display: flex;
+  background-color: #f7b42c;
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.category {
+  color: #eeeeee;
+  padding: 0 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
