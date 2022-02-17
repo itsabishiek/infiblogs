@@ -152,6 +152,8 @@ const PostDetail = ({ post }) => {
         const children = typeObj.children.map((item, itemIndex) =>
           getContentFragment(itemIndex, item.text, item)
         );
+        // console.log(typeObj.type);
+        // console.log(typeObj);
 
         return getContentFragment(index, children, typeObj, typeObj.type);
       })}

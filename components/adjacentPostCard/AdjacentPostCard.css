@@ -5,6 +5,16 @@
   margin-bottom: 40px;
 }
 
+.adjacent-card:hover .move-left {
+  transform: translateX(-10px);
+  transition: all 0.5s ease;
+}
+
+.adjacent-card:hover .move-right {
+  transform: translateX(10px);
+  transition: all 0.5s ease;
+}
+
 .adjacent-img {
   position: absolute;
   height: 100%;
