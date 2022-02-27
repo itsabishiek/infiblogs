@@ -19,7 +19,7 @@ const PostWidget = ({ slug, categories }) => {
         setRelatedPosts(result);
       });
     }
-  }, [slug]);
+  }, [slug, categories]);
 
   return (
     <div className="post-widget">

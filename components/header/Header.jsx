@@ -62,7 +62,9 @@ const Header = () => {
       </div>
 
       <div className="header-right">
-        <Search color="primary" style={{ cursor: "pointer" }} />
+        <Link href="/search">
+          <Search color="primary" style={{ cursor: "pointer" }} />
+        </Link>
 
         <MediaQuery maxWidth={768}>
           <SideDrawer>

@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import "../styles/Home.css";
 import "../styles/PostDetails.css";
 import "../styles/CategoryPost.css";
+import "../styles/Search.css";
 import "../components/header/Header.css";
 import "../components/postCard/PostCard.css";
 import "../components/categories/Categories.css";
